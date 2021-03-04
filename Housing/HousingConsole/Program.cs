@@ -32,10 +32,6 @@ namespace HousingConsole
 
             var predictions = model.Transform(split.TestSet);
 
-
-
-            predictions.
-
             var metrics = context.Regression.Evaluate(predictions);
 
             Console.WriteLine($"R^2 - {metrics.RSquared}");
